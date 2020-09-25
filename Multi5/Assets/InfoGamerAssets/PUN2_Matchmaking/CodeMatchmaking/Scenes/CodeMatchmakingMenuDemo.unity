@@ -128,10 +128,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1503471633559040662, guid: ddc3a97682959e14e846408256be9ee3,
+    - target: {fileID: 3291620899197467316, guid: ddc3a97682959e14e846408256be9ee3,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 260.9
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393682028182144488, guid: ddc3a97682959e14e846408256be9ee3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: JoinLobbyOnClick
       objectReference: {fileID: 0}
     - target: {fileID: 4267664526161711660, guid: ddc3a97682959e14e846408256be9ee3,
         type: 3}
@@ -188,10 +193,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6414887339389305219, guid: ddc3a97682959e14e846408256be9ee3,
+    - target: {fileID: 5945597436363398871, guid: ddc3a97682959e14e846408256be9ee3,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -236.6
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945597436363398872, guid: ddc3a97682959e14e846408256be9ee3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -133
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945597436363398873, guid: ddc3a97682959e14e846408256be9ee3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayerSelection
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945597436719507918, guid: ddc3a97682959e14e846408256be9ee3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945597437039764196, guid: ddc3a97682959e14e846408256be9ee3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -133
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945597437085597238, guid: ddc3a97682959e14e846408256be9ee3,
+        type: 3}
+      propertyPath: m_Text
+      value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945597437147144343, guid: ddc3a97682959e14e846408256be9ee3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945597437525849570, guid: ddc3a97682959e14e846408256be9ee3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945597438279642967, guid: ddc3a97682959e14e846408256be9ee3,
+        type: 3}
+      propertyPath: m_Text
+      value: Enter your Name and Click Next
       objectReference: {fileID: 0}
     - target: {fileID: 7181995810039072856, guid: ddc3a97682959e14e846408256be9ee3,
         type: 3}

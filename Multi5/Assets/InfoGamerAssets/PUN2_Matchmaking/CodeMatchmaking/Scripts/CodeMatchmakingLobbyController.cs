@@ -1,4 +1,5 @@
-﻿using Photon.Pun;
+﻿using JetBrains.Annotations;
+using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,8 @@ public class CodeMatchmakingLobbyController : MonoBehaviourPunCallbacks
     private GameObject lobbyPanel;
     [SerializeField]
     private GameObject mainPanel;
+    [SerializeField]
+    private GameObject playerSelectionPanel;
     [SerializeField]
     private InputField playerNameInput;
 
@@ -31,9 +34,14 @@ public class CodeMatchmakingLobbyController : MonoBehaviourPunCallbacks
     [SerializeField]
     private GameObject joinButton;
 
+
+ 
     public override void OnConnectedToMaster() //Callback function for when the first connection is established successfully.
     {
         PhotonNetwork.AutomaticallySyncScene = true; //Makes it so whatever scene the master client has loaded is the scene all other clients will load
+
+        mainPanel.SetActive(true);
+
         lobbyConnectButton.SetActive(true); //activate button for connecting to lobby
 
         //check for player name saved to player prefs
@@ -61,9 +69,16 @@ public class CodeMatchmakingLobbyController : MonoBehaviourPunCallbacks
         PlayerPrefs.SetString("NickName", nameInput);
     }
 
+ 
+    public void PlayerSelection()
+    {
+        playerSelectionPanel.SetActive(true);
+        mainPanel.SetActive(false);
+    }
+
     public void JoinLobbyOnClick() //Paired to the Delay Start button
     {
-        mainPanel.SetActive(false);
+        playerSelectionPanel.SetActive(false);
         lobbyPanel.SetActive(true);
         PhotonNetwork.JoinLobby(); //First tries to join a lobby
     }
