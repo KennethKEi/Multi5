@@ -37,8 +37,10 @@ public class CharacterSelection : MonoBehaviour
     }
     public void YellowCharacter()
     {
-        myCharacter = 3;
+        myCharacter = 2;
         Debug.Log("myCharacter is " + myCharacter);
     }
-    
+    //0 = Blue
+    //1 = Red
+    //2 = Yellow
 }
