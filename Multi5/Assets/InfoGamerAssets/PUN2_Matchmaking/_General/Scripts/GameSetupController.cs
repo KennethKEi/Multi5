@@ -22,8 +22,8 @@ public class GameSetupController : MonoBehaviour
     void Start()
     {
         sp_Blue = spawnPoint_Blue.transform.position;
-        sp_Blue = spawnPoint_Red.transform.position;
-        sp_Blue = spawnPoint_Yellow.transform.position;
+        sp_Red = spawnPoint_Red.transform.position;
+        sp_Yellow = spawnPoint_Yellow.transform.position;
 
         CreatePlayer(); //Create a networked player object for each player that loads into the multiplayer scenes.
     }
