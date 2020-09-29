@@ -309,6 +309,7 @@ public class APRController : MonoBehaviour
     /////////////////////
 	void GroundCheck()
 	{
+        
 		Ray ray = new Ray (APR_Parts[0].transform.position, -APR_Parts[0].transform.up);
 		RaycastHit hit;
 		
@@ -323,15 +324,16 @@ public class APRController : MonoBehaviour
                 }
             }
 		}
-		
-		//Fall over when ground is not detected
-		else if(!Physics.Raycast(ray, out hit, balanceHeight, 1 << LayerMask.NameToLayer("Ground")))
+        
+        //Fall over when ground is not detected
+        else if(!Physics.Raycast(ray, out hit, balanceHeight, 1 << LayerMask.NameToLayer("Ground")))
 		{
             if(balanced)
             {
                 balanced = false;
             }
 		}
+        Debug.Log(balanced);
 
 		
 		//Balance on/off
